@@ -1,0 +1,7 @@
+services:
+  web:
+    image: deviwax-web:latest
+    container_name: deviwaxcom-web
+    restart: unless-stopped
+    ports:
+      - "9094:80"
