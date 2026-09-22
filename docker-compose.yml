@@ -1,7 +1,11 @@
+# Deploy บน VPS — serve ไฟล์จาก git clone โดยตรง
+# วางที่ /data/deviwax-web/docker-compose.yml บน server
 services:
   web:
-    image: deviwax-web:latest
+    image: nginx:alpine
     container_name: deviwaxcom-web
+    volumes:
+      - /data/nginx-proxy-manager/data/deviwax-repo/httpdocs:/usr/share/nginx/html:ro
     restart: unless-stopped
     ports:
       - "9094:80"
