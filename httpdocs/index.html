@@ -14,14 +14,27 @@
 			min-height: 100%;
 		}
 		body {
+			background: url("images/marble.jpg") center/cover no-repeat fixed, #f4f2ef;
+			font-family: 'Work Sans', sans-serif;
+			font-weight: 300;
+			color: #222;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background: #f7f7f7;
-			font-family: 'Work Sans', sans-serif;
-			font-weight: 300;
-			color: #333;
-			padding: 60px 20px;
+			padding: 70px 24px;
+		}
+		/* thin double frame like the reference card */
+		.frame {
+			position: fixed;
+			inset: 18px;
+			border: 1px solid #1a1a1a;
+			pointer-events: none;
+		}
+		.frame::after {
+			content: "";
+			position: absolute;
+			inset: 5px;
+			border: 1px solid rgba(26,26,26,.35);
 		}
 		.wrap {
 			max-width: 620px;
@@ -29,39 +42,47 @@
 		}
 		h1 {
 			font-family: 'Sacramento', cursive;
-			font-size: 72px;
+			font-size: 84px;
 			font-weight: normal;
-			margin: 0 0 6px;
+			margin: 0 0 4px;
+			color: #1a1a1a;
 		}
 		.headline {
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 600;
-			letter-spacing: 3px;
+			letter-spacing: 6px;
 			text-transform: uppercase;
-			color: #555;
-			margin: 0 0 28px;
+			color: #1a1a1a;
+			margin: 0 0 10px;
+		}
+		.divider {
+			width: 120px;
+			height: 1px;
+			margin: 0 auto 30px;
+			background: linear-gradient(90deg, transparent, #b08d3e, transparent);
 		}
 		p {
-			font-size: 16px;
-			line-height: 1.8;
-			color: #555;
+			font-size: 15.5px;
+			line-height: 1.9;
+			color: #3a3a3a;
 			margin: 0 0 16px;
 		}
+		p b { font-weight: 600; }
 		.whats-new {
+			margin: 30px auto;
+			padding: 26px 30px;
+			border-top: 1px solid rgba(26,26,26,.25);
+			border-bottom: 1px solid rgba(26,26,26,.25);
 			text-align: left;
-			margin: 26px auto 10px;
-			padding: 22px 28px;
-			background: #fff;
-			border: 1px solid #eee;
-			border-radius: 8px;
 		}
 		.whats-new h2 {
-			font-size: 15px;
+			font-size: 13px;
 			font-weight: 600;
-			letter-spacing: 2px;
+			letter-spacing: 4px;
 			text-transform: uppercase;
-			margin: 0 0 14px;
-			color: #333;
+			text-align: center;
+			margin: 0 0 18px;
+			color: #b08d3e;
 		}
 		.whats-new ul {
 			margin: 0;
@@ -69,20 +90,31 @@
 		}
 		.whats-new li {
 			font-size: 15px;
-			line-height: 1.7;
-			color: #555;
-			margin-bottom: 10px;
+			line-height: 1.75;
+			color: #3a3a3a;
+			margin-bottom: 12px;
 		}
-		.whats-new li b {
-			font-weight: 600;
-			color: #333;
+		.whats-new li b { font-weight: 600; color: #1a1a1a; }
+		.contact {
+			margin-top: 26px;
+			font-size: 14px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #555;
+		}
+		.contact a {
+			color: #1a1a1a;
+			text-decoration: none;
+			border-bottom: 1px solid #b08d3e;
 		}
 	</style>
 </head>
 <body>
+	<div class="frame"></div>
 	<div class="wrap">
 		<h1>DeviWax</h1>
 		<p class="headline">We are back!</p>
+		<div class="divider"></div>
 		<p>After a 2-year hiatus, DeviWax is officially back and ready to get you smooth again!</p>
 		<p>We are returning to our <b>original location</b>, but with an exciting new update &mdash; you can now find us operating <b>inside Sensual Lashes</b>. We've missed our incredible clients so much and can't wait to welcome you back into our refreshed space.</p>
 		<div class="whats-new">
@@ -94,6 +126,7 @@
 			</ul>
 		</div>
 		<p>Whether it's been a few months or two years since your last wax, we are here to provide the same professional, clean, and comfortable experience you know and love.</p>
+		<p class="contact"><a href="tel:+14243419242">(424) 341-9242</a></p>
 	</div>
 </body>
 </html>

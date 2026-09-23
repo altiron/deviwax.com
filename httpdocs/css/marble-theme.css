@@ -1,0 +1,105 @@
+/* DeviWax marble theme overrides — load AFTER style.css */
+
+body {
+	background: #f4f2ef url("../images/marble.jpg") center/cover no-repeat fixed;
+	color: #2b2b2b;
+}
+
+/* ---------- nav (sits on dark hero photo — keep light) ---------- */
+.fh5co-nav ul li.active > a {
+	color: #d9c08a !important;
+}
+
+/* ---------- hero — keep original photo ---------- */
+
+/* ---------- testimonial ---------- */
+#fh5co-testimonial .fh5co-heading h2,
+#fh5co-testimonial h2 {
+	color: #1a1a1a;
+}
+#fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
+	border-color: rgba(26, 26, 26, 0.15);
+}
+#fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
+	color: #3a3a3a;
+}
+
+/* ---------- services (event) ---------- */
+#fh5co-event {
+	background-image: url("../images/marble.jpg") !important;
+}
+#fh5co-event .overlay {
+	background: rgba(255, 255, 255, 0.5);
+}
+#fh5co-event .fh5co-heading h2 {
+	color: #1a1a1a;
+}
+#fh5co-event .event-wrap {
+	border: 1px solid rgba(26, 26, 26, 0.35);
+	background: rgba(255, 255, 255, 0.72);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+}
+#fh5co-event .event-wrap h3 {
+	color: #1a1a1a;
+	border-bottom-color: rgba(26, 26, 26, 0.25);
+}
+#fh5co-event .event-wrap p,
+#fh5co-event .event-wrap span {
+	color: rgba(0, 0, 0, 0.75);
+}
+#fh5co-event .event-wrap h4.service-cat {
+	color: #b08d3e;
+	border-top-color: rgba(26, 26, 26, 0.15);
+}
+#fh5co-event .event-wrap h3 + h4.service-cat {
+	border-top: none;
+}
+#fh5co-event .service-row .service-name {
+	color: #1a1a1a;
+}
+#fh5co-event .service-row .service-price {
+	color: #b08d3e;
+	font-weight: 600;
+}
+#fh5co-event .service-desc {
+	color: rgba(0, 0, 0, 0.55);
+}
+
+/* ---------- gallery ---------- */
+#fh5co-gallery {
+	background: rgba(255, 255, 255, 0.55);
+}
+#fh5co-gallery h2 {
+	color: #1a1a1a;
+}
+#fh5co-gallery-list li {
+	border: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+/* ---------- footer ---------- */
+#fh5co-footer {
+	background: rgba(255, 255, 255, 0.55);
+}
+#fh5co-footer .copyright small {
+	color: #555;
+}
+#fh5co-footer .fh5co-social-icons li a {
+	color: #1a1a1a;
+}
+#fh5co-footer .fh5co-social-icons li a:hover {
+	color: #b08d3e;
+}
+
+/* ---------- contact page ---------- */
+.fh5co-contact-info,
+.fh5co-contact-info p,
+.fh5co-contact-info ul li {
+	color: #2b2b2b;
+}
+.fh5co-contact-info ul li a {
+	color: #1a1a1a;
+}
+.fh5co-contact-info ul li.phone a {
+	border-bottom: 1px solid #b08d3e;
+}
