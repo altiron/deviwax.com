@@ -5,23 +5,47 @@ body {
 	color: #2b2b2b;
 }
 
-/* ---------- nav (sits on dark hero photo — keep light) ---------- */
+/* ---------- nav (sits on light hero photo — dark text) ---------- */
+.fh5co-nav ul li a {
+	color: #2b2b2b !important;
+}
+.fh5co-nav ul li a:hover {
+	color: #b08d3e !important;
+}
 .fh5co-nav ul li.active > a {
-	color: #d9c08a !important;
+	color: #b08d3e !important;
+}
+.menu-1 .fh5co-nav-toggle i,
+.fh5co-nav-toggle i {
+	color: #2b2b2b !important;
+}
+#fh5co-logo a,
+#fh5co-logo a strong {
+	color: #1a1a1a !important;
+}
+#fh5co-logo a strong {
+	color: #b08d3e !important;
 }
 
-/* ---------- hero — keep original photo ---------- */
-
-/* ---------- testimonial ---------- */
-#fh5co-testimonial .fh5co-heading h2,
-#fh5co-testimonial h2 {
+/* ---------- hero — bright spa photo, dark text ---------- */
+#fh5co-header .overlay {
+	background: rgba(255, 255, 255, 0.78);
+}
+#fh5co-header h2 {
 	color: #1a1a1a;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-shadow: none;
+	margin-bottom: 20px;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
-	border-color: rgba(26, 26, 26, 0.15);
-}
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
-	color: #3a3a3a;
+#fh5co-header p {
+	color: rgba(0, 0, 0, 0.72);
+	font-size: 18px;
+	line-height: 1.7;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ---------- services (event) ---------- */
