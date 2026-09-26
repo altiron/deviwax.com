@@ -31,7 +31,7 @@ body {
 #fh5co-header .overlay {
 	background: rgba(255, 255, 255, 0.78);
 }
-#fh5co-header h2 {
+#fh5co-header .display-tc h2 {
 	color: #1a1a1a;
 	font-size: 32px;
 	font-weight: 500;
@@ -39,7 +39,7 @@ body {
 	text-shadow: none;
 	margin-bottom: 20px;
 }
-#fh5co-header p {
+#fh5co-header .display-tc p {
 	color: rgba(0, 0, 0, 0.72);
 	font-size: 18px;
 	line-height: 1.7;
